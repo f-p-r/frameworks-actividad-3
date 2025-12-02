@@ -1,0 +1,28 @@
+# IMÁGENES REQUERIDAS
+
+Debes añadir las siguientes imágenes en esta carpeta para que la aplicación funcione correctamente:
+
+## Espacios de coworking (obligatorias)
+- 1.jpg, 2.jpg, 3.jpg, ..., 20.jpg (20 imágenes en total)
+- Dimensiones recomendadas: 800x600px o superior
+- Formato: JPG, PNG o WebP
+- Contenido: Fotos de espacios de trabajo, oficinas, salas de reuniones
+
+## Landing page (obligatorias)
+- hero.jpg - Imagen principal del hero section (1200x800px)
+- workspace.jpg - Imagen de área de trabajo (1200x800px)
+
+## ¿Dónde conseguir imágenes?
+Puedes usar:
+- Unsplash.com (busca: "coworking", "office space", "meeting room")
+- Pexels.com (busca: "workspace", "office", "coworking")
+- Pixabay.com
+
+## Ejemplo de búsqueda
+1. Ve a unsplash.com
+2. Busca "coworking space"
+3. Descarga 20 imágenes diferentes
+4. Renómbralas como 1.jpg, 2.jpg, etc.
+5. Colócalas en esta carpeta
+
+NOTA: Mientras no añadas las imágenes, la aplicación mostrará errores en las rutas de imagen.

@@ -1,0 +1,296 @@
+/* ==================================
+   ESTILOS GLOBALES - SISTEMA NEXUS
+   ================================== */
+
+/* ========== TIPOGRAFÍA ========== */
+body,
+html {
+  font-family: Tahoma, sans-serif;
+  color: #212529;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Source Serif 4", serif;
+  font-weight: 700;
+  color: #212529;
+}
+
+/* ========== NAVBAR ========== */
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 80px;
+}
+
+.navbar-brand img {
+  height: 70px;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+  }
+  body {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .navbar-collapse {
+    background-color: #343a40;
+    z-index: 1030;
+  }
+  .nav-item {
+    padding-left: 2ch;
+  }
+}
+
+.navbar-collapse.show .nav-link {
+  color: #ffffff;
+}
+
+.navbar-collapse.show .nav-link:hover {
+  color: #adb5bd;
+}
+
+/* ========== CARDS ========== */
+.card {
+  border-radius: 0.6rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.card-img-top {
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1rem;
+}
+
+.card-text {
+  font-size: 0.875rem;
+}
+
+/* Cards de librería */
+.card-libro {
+  max-width: 214px;
+}
+
+.libro-novedad {
+  border: 3px solid #d93025;
+  box-shadow: 0 0 10px rgba(217, 48, 37, 0.4);
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.etiqueta-novedad {
+  color: #d93025;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+/* Cards de cafetería */
+.caf-card-producto {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  border-radius: 0.6rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.caf-producto-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* ========== MODALES ========== */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1040;
+  opacity: 0;
+  animation: fadeIn 0.25s forwards;
+}
+
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.95);
+  background: #fff;
+  border-radius: 0.75rem;
+  z-index: 1050;
+  width: 95%;
+  max-width: 900px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 1.5rem;
+  opacity: 0;
+  animation: zoomIn 0.25s forwards;
+}
+
+.modal-container-small {
+  max-width: 600px;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* ========== FORMULARIOS ========== */
+.cantidad {
+  width: 6ch;
+  height: 1.5rem;
+  font-size: 0.9rem;
+  padding: 0.2rem;
+  text-align: center;
+}
+
+.form-select-sm.select-pequeno {
+  max-width: 5rem;
+}
+
+/* ========== BOTONES ========== */
+.btn {
+  border-radius: 0.3rem;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #e9ecef;
+}
+
+/* ========== CAROUSEL ========== */
+.carousel-item img {
+  object-fit: cover;
+  max-height: 420px;
+  width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .carousel {
+    margin-top: 2rem;
+  }
+}
+
+/* ========== TABS ========== */
+.nav-tabs {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.nav-tabs .nav-link {
+  color: #6c757d;
+  border: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.nav-tabs .nav-link:hover {
+  border-bottom: 2px solid #dee2e6;
+}
+
+.nav-tabs .nav-link.active {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  font-weight: 500;
+  background: transparent;
+}
+
+/* ========== ACCORDION ========== */
+.accordion-button.collapsed {
+  background-color: #f8f9fa;
+}
+
+/* ========== LANDING PAGE ========== */
+.landing-imagen {
+  float: right;
+  width: 50%;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.landing-texto {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+@media (max-width: 767.98px) {
+  .landing-imagen {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    display: block;
+  }
+
+  .landing-texto {
+    text-align: left;
+    font-size: 1rem;
+  }
+}
+
+/* ========== UTILIDADES ========== */
+.bg-dark-custom {
+  background-color: #343a40;
+}
+
+.text-primary-custom {
+  color: #007bff;
+}
+
+.text-secondary-custom {
+  color: #6c757d;
+}
+
+.text-novedad {
+  color: #d93025;
+}
+
+/* Utilidad: fuente serif para nombres de espacios */
+.font-serif {
+  font-family: "Source Serif 4", serif;
+}
+
+.shadow-soft {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.shadow-modal {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+}
+
+.shadow-strong {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
