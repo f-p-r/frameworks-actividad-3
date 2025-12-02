@@ -164,7 +164,7 @@
     <!-- CTA Section -->
     <section class="cta-section py-5 bg-dark text-white">
       <div class="container-md text-center">
-        <h2 class="mb-4">¿Listo para encontrar tu espacio ideal?</h2>
+        <h2 class="mb-4 text-white">¿Listo para encontrar tu espacio ideal?</h2>
         <p class="lead mb-4">
           Explora nuestra selección completa de espacios de coworking y reserva el que mejor se adapte a
           tus necesidades.

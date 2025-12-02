@@ -11,7 +11,8 @@ export default defineConfig({
     vueDevTools(),
   ],
   // Base pública para despliegue bajo subdirectorio (e.g., /frameworks_a3)
-  base: '/frameworks_a3/',
+   base: '/frameworks_a3/',
+
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
